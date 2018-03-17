@@ -23,7 +23,7 @@ github_username:  marcoconti83
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydeout
+remote-theme: jekyll-theme-hydeout
 
 author:
   name: 'Marco Conti'
