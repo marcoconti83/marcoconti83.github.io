@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+<p><iframe src="http://player.vimeo.com/video/48387258?title=0&amp;byline=0&amp;portrait=0" frameborder="0" width="500" height="375"></iframe></p>
+<p><strong>An augmented reality game coded in C#/XNA using OpenCV. The requirement for this project was to use two non-traditional input methods and I decided to use a webcam and a microphone.</strong></p>
+<p>This is a simple game that allow the user to interact with the application without using the traditional controls (keyboard, mouse, joypad). The interaction is based on a normal sheet of A4 paper lying on the desktop in front of the computer. The user can point positions on the sheet that are then mapped on the game world; furthermore, the user interacts with the application using a microphone.</p>
+<p>By playing the game the player faces a minimalistic AI on a middle-age inspired battleground. The goal is to destroy the opponent's tower while defending your own. The player is not able to control directly the ten soldier that form his army. Instead, the used is able to pick the initial position where the soldiers will start from. Once the game has started, the soldiers will simply move towards the other end of the battlefield, fighting any enemy soldier found on the way, and finally attacking the enemy tower if they make it to the end of the battleground.</p>
+<p><img class="alignleft size-full wp-image-60" title="Chaaaaaaarge! setup" src="{{ site.baseurl }}/assets/charge-instr.png" alt="" width="344" height="409" /></p>
+<p>To make things more interesting, there is a destroyable obstacle in the middle of the field, and soldiers of the same army can collaborate by pushing friends from behind. Since the two armies move one toward the other, with just a sprinkle of randomness, the soldiers on the first line will inevitably clash frontally. Soldiers from the back row will push the ones on the first line adding their force to the impact with the enemy. The player can therefore experiment different formations (the wedge formation has proven to be very useful during the testing).</p>
+<p>After the battle start, the user cannot control the soldiers anymore, but can use the microphone to make battle cries (even if any sound loud enough will do) once every certain amount of time. In doing so he can boost the pushing force of his own soldiers. The very beginning of the battle is started by the<br />
+player by shouting in the microphone (hence the name of the game).</p>
+<h2>Main features</h2>
+<ul>
+<li>Input is provided via the camera using a simple sheet of white paper and via microphone</li>
+<li>Coded in C#/XNA for the game part, C++/OpenCV for the camera input and using Naudio</li>
+<li>Built-in camera calibration and debugging</li>
+<li>All the graphic content has been created by myself</li>
+<li>Graphic is displayed on top of live video</li>
+</ul>
