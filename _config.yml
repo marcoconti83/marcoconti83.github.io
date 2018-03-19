@@ -47,7 +47,6 @@ exclude:
   - .gitignore
 
 # Custom vars
-version:            3.5.3
 sidebar_home_link:  true
 github:
   profile: marcoconti83
