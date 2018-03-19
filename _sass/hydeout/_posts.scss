@@ -32,6 +32,11 @@ article + *, .post-body ~ section {
   margin-top: 0;
 }
 
+.post-title::before {
+  content: "➢";
+  margin-right: 0.5em;
+}
+
 // h1-size h2
 h2.post-title, h2.page-title {
   font-size: 2rem;

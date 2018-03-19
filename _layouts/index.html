@@ -5,7 +5,11 @@ layout: default
 <div class="content">
   {% include pagination-newer.html %}
 
-  {{ content }}
+  {% unless paginator.previous_page %}
+    {% include front-page.html %}
+    {{ content }}
+    <h1 class="post-list-header">Posts</h1>
+  {% endunless %}
 
   {% for post in paginator.posts %}
   <article class="post-body">
