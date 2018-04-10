@@ -9,7 +9,7 @@ A list of softwares and software-related publications I worked on.
 
 ## Desktop and mobile applications
 
-- _Wire_ (2014), Wire Swiss Gmbh, mobile and desktop messaging/voice client
+- _Wire_ (2014-2018), Wire Swiss Gmbh, mobile and desktop messaging/voice client
 
 ## Interactive entertainment
 
