@@ -9,13 +9,13 @@ A list of softwares and software-related publications I worked on.
 
 ## Desktop and mobile applications
 
-- _Wire_ (2014-2018), Wire Swiss Gmbh, mobile and desktop messaging/voice client
+- [_Wire_](https://wire.com) (2014-2018), Wire Swiss Gmbh, mobile and desktop messaging/voice client
 
 ## Interactive entertainment
 
-- _Gangstar Vegas_ (2013), Gameloft, iOS/Android
-- _Dungeon Hunter 4_ (2013), Gameloft, iOS/Android
-- _Asphalt 7_ (2012), Gameloft, iOS/Android
+- [_Gangstar Vegas_](https://www.youtube.com/watch?v=K6EeioN9k4w) (2013), Gameloft, iOS/Android
+- [_Dungeon Hunter 4_](https://www.youtube.com/watch?v=9ywtJReQ9MI) (2013), Gameloft, iOS/Android
+- [_Asphalt 7_](https://www.youtube.com/watch?v=OXP9Rcr7OLQ) (2012), Gameloft, iOS/Android
 
 ## Dissertations
 
@@ -32,7 +32,11 @@ A list of softwares and software-related publications I worked on.
 ## Web applications
 
 - _Trinity Inclusive Curriculum Online Evaluation Tool_ (2010), self-published web application for Trinity College Dublin, Disability Office
-- _TCD ItSoc Booksharing Database_ (2010), self-published web application  for Trinity College Dublin Italian Society
+- _TCD ItSoc Booksharing Database_ (2010), self-published web application for Trinity College Dublin Italian Society
+
+## Open source contributions
+
+- [_Carthage_](https://github.com/Carthage/Carthage), contributed in 2017-2018, iOS/macOS development tool for dependency management
 
 ## ... and more
 
