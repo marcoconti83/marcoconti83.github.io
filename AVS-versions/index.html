@@ -9,17 +9,40 @@
 </head>
 
 <body>
-<h1>AVS versions</h1>
 
-<h2>Android</h2>
-<table id="android-table">
-    <tr><th>Android app version</th><th>AVS version</th></tr>
-</table>  
+<div id="github-auth-form">
+    <h1>Please authenticate on GitHub</h1>
+    <p>Authenticating avoids hitting the rate limiting for API requests. The credentials entered here are handled locally via javascript and sent only to GitHub API via your internet connection. They are not stored anywhere else.</p>
+    <table>
+        <tr>
+            <td>
+                <h3>Login with username and password</h3></p>
+                <p>Username: <input type="text" id="github-user"></p>
+                <p>Password: <input type="password" id="github-password"></p>
+                <p><input type="button" id="github-login-with-password" value="Login" style="display: none"></p>
+            </td>
+            <td>
+                <h3>Login with token</h3></p>
+                <p>Personal token: <input type="password" id="github-token"></p>
+                <p><input type="button" id="github-login-with-token" value="Login" style="display: none"></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="display: none" id="github-needs-auth">
+<h1>AVS versions</h1>
 
 <h2>iOS</h2>
 <table id="ios-table">
     <tr><th>iOS app version</th><th>AVS version</th></tr>
+    <tr id="ios-fetching-row"><td colspan="2">Fetching...</td></tr>
 </table>  
+
+<h2>Android</h2>
+<p>Not available at the moment</p>
+
+</div>
 
 <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
