@@ -12,20 +12,22 @@
 
 <div id="github-auth-form">
     <h1>Please authenticate on GitHub</h1>
-    <p>Authenticating avoids hitting the rate limiting for API requests. The credentials entered here are handled locally via javascript and sent only to GitHub API via your internet connection. They are not stored anywhere else.</p>
+    <p>Authenticating avoids hitting the rate limiting for API requests. The credentials entered here are handled locally via javascript and sent only to GitHub API via your browser and the <a href="https://github.com/github-tools/github">Github.js</a> library. They are not stored anywhere else.</p>
     <table>
         <tr>
             <td>
                 <h3>Login with username and password</h3></p>
                 <p>Username: <input type="text" id="github-user"></p>
                 <p>Password: <input type="password" id="github-password"></p>
-                <p><input type="button" id="github-login-with-password" value="Login" style="display: none"></p>
             </td>
             <td>
                 <h3>Login with token</h3></p>
                 <p>Personal token: <input type="password" id="github-token"></p>
-                <p><input type="button" id="github-login-with-token" value="Login" style="display: none"></p>
             </td>
+        </tr>
+        <tr>
+            <td><input type="button" id="github-login-with-password" value="Login" style="display: none"></td>
+            <td><input type="button" id="github-login-with-token" value="Login" style="display: none"></td>
         </tr>
     </table>
 </div>

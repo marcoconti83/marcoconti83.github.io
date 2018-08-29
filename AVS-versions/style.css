@@ -8,4 +8,5 @@ table, th, td {
 
 th, td {
     padding: 0 1em 0 1em;
+    vertical-align: top;
 }
