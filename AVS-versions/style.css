@@ -10,3 +10,9 @@ th, td {
     padding: 0 1em 0 1em;
     vertical-align: top;
 }
+
+.link-button {
+    text-decoration: underline;
+    color: gray;
+    font-size: 70%;
+}

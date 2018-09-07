@@ -11,9 +11,20 @@ function __showError(message, e) {
     alert(output);
 };
 
+function forget() {
+    localStorage.gh_token = null;
+    $("#github-token").val("");
+    $("#github-remember-token").prop('checked', false);
+}
+
 $(function(){
 
     $("#github-auth-form").tabs();
+
+    // load local storage token
+    if (localStorage.gh_token != null && localStorage.gh_token.length > 0) {
+        $("#github-token").val(localStorage.gh_token);
+    }
         
     // Show login with password button
     $("#github-login-with-password").show().click(function() {
@@ -30,13 +41,14 @@ $(function(){
     });
 
     // Verify that the given GH instance is authenticated
-    function verifyIfAuthSucceded(tempGH) {
+    function verifyIfAuthSucceded(tempGH, token) {
         tempGH.getUser().getProfile(function(err, result, req){
             if (err !== null) {
                 alert("Auth error");
                 $("#github-login-with-password").show();
                 $("#github-login-with-token").show();
             } else {
+                localStorage.gh_token = token;
                 loginSuccess(tempGH);
             }
         });
@@ -53,10 +65,16 @@ $(function(){
 
     // Attempt login with provided token
     function attemptLoginWithToken() {
+        token = $("#github-token").val()
         var tempGH = new GitHub({
-            token: $("#github-token").val()
+            token: token
         });
-        verifyIfAuthSucceded(tempGH);
+        if ($("#github-remember-token").prop('checked')) {
+            verifyIfAuthSucceded(tempGH, token);
+        } else {
+            verifyIfAuthSucceded(tempGH, null);
+        }
+        
     }
 
     // Called on successful login
