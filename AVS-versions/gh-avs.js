@@ -19,7 +19,7 @@ function getiOSVersions() {
     // Remove previous values
     $("#ios-table > tbody").empty();
 
-    var iOSRepo = gh.getRepo(ghOrganization, IOS_REPO);
+    var iOSRepo = gh.getRepo(GH_ORGANIZATION, IOS_REPO);
     iOSRepo.listTags(function(err, result, req){
         if (err !== null) {
             __showError("fetching tags!", err);
